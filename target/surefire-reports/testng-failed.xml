@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AprilRegressionSuite]">
+  <listeners>
+    <listener class-name="generic.MyTestListeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="TestInFirefox(failed)">
+    <classes>
+      <class name="scripts.TestValidLogin">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- scripts.TestValidLogin -->
+    </classes>
+  </test> <!-- TestInFirefox(failed) -->
+</suite> <!-- Failed suite [AprilRegressionSuite] -->
